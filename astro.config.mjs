@@ -21,6 +21,7 @@ export default defineConfig({
 	integrations: [
 		storyblok({
 			accessToken: STORYBLOK_DELIVERY_API_TOKEN,
+			livePreview: true,
 			apiOptions: {
 				/** Set the correct region for your space. Learn more: https://www.storyblok.com/docs/packages/storyblok-js#example-region-parameter */
 				region: STORYBLOK_REGION || 'eu',

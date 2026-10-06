@@ -1,18 +1,24 @@
 ---
-import { useStoryblokApi } from '@storyblok/astro';
-import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro';
-import Layout from '../layouts/Layout.astro';
+import { useStoryblokApi, getPayload } from "@storyblok/astro";
+import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
+import Layout from "../layouts/Layout.astro";
 
-const { slug } = Astro.params;
-
-const storyblokApi = useStoryblokApi();
-const { data } = await storyblokApi.get(`cdn/stories/${slug || 'home'}`, {
-	version: 'draft'
+const payload = await getPayload({
+  locals: Astro.locals,
 });
 
-const story = data.story;
+const storyblokApi = useStoryblokApi();
+
+// Use live preview data or fallback to API
+const story =
+  payload?.story ??
+  (
+    await storyblokApi.get("cdn/stories/home", {
+      version: "draft",
+    })
+  ).data.story;
 ---
 
 <Layout>
-	<StoryblokComponent blok={story.content} />
+  <StoryblokComponent blok={story.content} />
 </Layout>
