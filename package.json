@@ -18,16 +18,13 @@
     "wrangler": "^4.149.0"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^14.3.4",
-    "@astrojs/netlify": "^8.2.6",
-    "@astrojs/vercel": "^11.0.10"
+    "@astrojs/cloudflare": "^14.3.4"
   },
   "overrides": {
     "sharp": "^0.35.4",
     "tar": "^7.5.22",
     "es-module-lexer": "^3.0.2",
     "yargs": "^18.1.0",
-    "@netlify/vite-plugin": "^3.0.1",
     "image-size": "^2.0.4",
     "tmp": "^0.2.7",
     "brace-expansion": "^5.0.12",
