@@ -16,8 +16,8 @@ importers:
         version: 3.1.8(astro@7.3.8(@types/node@26.6.5)(esbuild@0.28.2)(yaml@2.9.1))
     devDependencies:
       '@storyblok/astro':
-        specifier: ^10.3.1
-        version: 10.3.2(@floating-ui/dom@1.8.0)(astro@7.3.8(@types/node@26.6.5)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^10.4.0
+        version: 10.4.0(@floating-ui/dom@1.8.0)(astro@7.3.8(@types/node@26.6.5)(esbuild@0.28.2)(yaml@2.9.1))
       astro:
         specifier: ^7.3.3
         version: 7.3.8(@types/node@26.6.5)(esbuild@0.28.2)(yaml@2.9.1)
@@ -890,16 +890,16 @@ packages:
   '@speed-highlight/core@1.2.24':
     resolution: {integrity: sha512-qeW2e1l78afw8VhRPfPQ1Gjj+KU5XFQ/OFV5ti6eTa9bruO7mJyZtA4vw0ofqmA3tKCkROE9xLk3VZoeRc98nw==}
 
-  '@storyblok/astro@10.3.2':
-    resolution: {integrity: sha512-Uus38tvnQl43CRkPhFW1a1p6zu1HaW6lF92aEeRG8G7akLZmJ5dz27pO0Cgbbe1zj/IlogkXPK9500U4mv+9mw==}
+  '@storyblok/astro@10.4.0':
+    resolution: {integrity: sha512-aGCLCvNFD/FzVc++92ZarUhjSM0fxOqj+GrAyZOINFFJ4M6Pp6ZczQ/dL6f+GOAQH9GxMKU+lMB54uRG0vAQOg==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
 
-  '@storyblok/js@6.3.4':
-    resolution: {integrity: sha512-H5ZGryFm6yh9iLc0HpYYc1U4XgR9hiSD739qiSbdoYRrSrRnOxnSOc8IQu9eAQJwCrFzjrImYp3cpBKEuSp5dA==}
+  '@storyblok/js@6.4.0':
+    resolution: {integrity: sha512-Qt2xmZ1fmXbKhOm+qTN5R8JFADW6BdJzE2jUCR30sgvl3+OATij+BFAj9F3QkqGP/OwZktaSUpSnswfc1xy9ww==}
 
-  '@storyblok/preview-bridge@2.5.0':
-    resolution: {integrity: sha512-/j2D8NpBBKeoXHvv9Txyh//6mTyr6OJYJxheTd6x1YbZ2LrDkppaxgSKJdEylWPPawFQPOzR3+Y2nyKUAeuKGA==}
+  '@storyblok/preview-bridge@2.6.1':
+    resolution: {integrity: sha512-FAZ1cKm4Glfhk7+wDrfXzY426uX4ezY8Xw3ViSK7sqSxTZ2hs3gpCfFjkA4TWjbHAdYpLHehRldWWBvCG7xN/A==}
 
   '@storyblok/richtext@5.3.3':
     resolution: {integrity: sha512-p33JAwLxarQDibrSNtQGhs9Goo1IFiNRMwcxphtZlSXnJiiTRrKfrFy7Pj9WIqO/FVmdsJXyYBDK1thLU1Yzdw==}
@@ -1746,8 +1746,8 @@ packages:
   space-separated-tokens@2.0.2:
     resolution: {integrity: sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==}
 
-  storyblok-js-client@7.7.7:
-    resolution: {integrity: sha512-F296E3+74VhANL/7CsciZ6RdNjG3zSQn0q8xckJlyoPHcm0RQcljHRuF8+vdHDM9LMGuxrCbZYo5MxndgQoBBw==}
+  storyblok-js-client@7.8.1:
+    resolution: {integrity: sha512-CNBjMn1Ize3kLxcVhF0oJXHc8s5r/HWvsnXFSK+fjt3STAlrsK4UbZ3lZ621H3prUBJcdEdrR3lI6tUEnKob+A==}
 
   stringify-entities@4.0.4:
     resolution: {integrity: sha512-IwfBptatlO+QCJUo19AqvrPNqlVMpW9YEL2LIVY+Rpv2qsjCGxaDLNRgeGsQWJhfItebuJhsGSLjaBbNSQ+ieg==}
@@ -2685,9 +2685,9 @@ snapshots:
 
   '@speed-highlight/core@1.2.24': {}
 
-  '@storyblok/astro@10.3.2(@floating-ui/dom@1.8.0)(astro@7.3.8(@types/node@26.6.5)(esbuild@0.28.2)(yaml@2.9.1))':
+  '@storyblok/astro@10.4.0(@floating-ui/dom@1.8.0)(astro@7.3.8(@types/node@26.6.5)(esbuild@0.28.2)(yaml@2.9.1))':
     dependencies:
-      '@storyblok/js': 6.3.4(@floating-ui/dom@1.8.0)
+      '@storyblok/js': 6.4.0(@floating-ui/dom@1.8.0)
       '@storyblok/richtext': 5.3.3(@floating-ui/dom@1.8.0)
       astro: 7.3.8(@types/node@26.6.5)(esbuild@0.28.2)(yaml@2.9.1)
       camelcase: 8.0.0
@@ -2697,17 +2697,17 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@storyblok/js@6.3.4(@floating-ui/dom@1.8.0)':
+  '@storyblok/js@6.4.0(@floating-ui/dom@1.8.0)':
     dependencies:
-      '@storyblok/preview-bridge': 2.5.0
+      '@storyblok/preview-bridge': 2.6.1
       '@storyblok/richtext': 5.3.3(@floating-ui/dom@1.8.0)
-      storyblok-js-client: 7.7.7
+      storyblok-js-client: 7.8.1
     transitivePeerDependencies:
       - '@floating-ui/dom'
       - bufferutil
       - utf-8-validate
 
-  '@storyblok/preview-bridge@2.5.0':
+  '@storyblok/preview-bridge@2.6.1':
     dependencies:
       pure-parse: 0.0.0-beta.8
 
@@ -3740,7 +3740,7 @@ snapshots:
 
   space-separated-tokens@2.0.2: {}
 
-  storyblok-js-client@7.7.7: {}
+  storyblok-js-client@7.8.1: {}
 
   stringify-entities@4.0.4:
     dependencies:
